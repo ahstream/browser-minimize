@@ -1,0 +1,30 @@
+{
+  "name": "browser-minimize",
+  "description": "Browser Minimize Chrome Extension",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw0apjK7DZVc8Ifox3tn1VjjHoMW9Lyxtrqw3/Cv9vYfXradAxfxN+p8TbAZYzxjqKtgzWikMfTgfDhsbfgGKGltRmhJXVXrh6oq1vlGP0fcisXQnfAVFak+ReimF0cWad3eOAwRA6zRC1KcLMP+iJmuN3GSDaEFBGTGyjuLPWJDjQ7/GfomiztLjrTBLICm6zzjDeQR+gwszvomGe4PC9Hb/1Z9qIv30enlQIFVjVEedx20/UMvCBYCMbt8aSt3o/1o8B62XuCKwqKTgjoClJfAC0chId9YRVeQkh+ouhPJdkAjXfFQD+oI66u/5WNQhDliHHSkDs3s47NDMfjKw4QIDAQAB",
+  "permissions": ["storage", "activeTab", "tabs", "webNavigation"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "action": {
+    "default_icon": {
+      "16": "/images/icons/16.png",
+      "32": "/images/icons/32.png",
+      "48": "/images/icons/48.png",
+      "128": "/images/icons/128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/icons/16.png",
+    "32": "/images/icons/32.png",
+    "48": "/images/icons/48.png",
+    "128": "/images/icons/128.png"
+  },
+  "background": {
+    "service_worker": "serviceWorker.js"
+  },
+  "content_scripts": []
+}
